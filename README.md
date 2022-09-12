@@ -70,6 +70,12 @@ Obtain your bots security token and place it in your local `.env` file:
 ```
 DISCORD_TOKEN=<your-token-here>
 ```
+
+**Important!** Keep this token secret.
+Anyone who knows the token can impersonate your bot/application
+with the consequences falling back on your account
+(since Discord will think it is you, with _your_ token).
+
 1. Reset your bot's token to obtain a new one. 
    The original one created (upon bot creation) is not visible to me (bug in discord.com user interface?).
    ![Screenshot of resetting bot token](docs/discord-bot-reset-token.png)
@@ -84,10 +90,6 @@ If you create a new token again (by pressing [Reset Token])
 your bot will not be able to run (join servers/guilds) before
 you update your `.env` file with the new token.
 
-**Important!** Keep this token secret.
-Anyone who knows the token can impersonate your bot/application
-with the consequences falling back on your account
-(since Discord will think it is you, with _your_ token).
 
 ## OAuth2 URL
 Obtain an OAuth2 URL used to invite your bot to a server / guild.
