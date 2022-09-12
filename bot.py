@@ -58,35 +58,15 @@ async def helloworld(ctx):
 #@bot.command(name='help')
 #async def help(ctx):
 #
-#    about_text = ('A simple bot which handles a simple (fifo) queue '
-#                 'for help / support / private discussion requests.\n\n'
-#                 'One or more admin members can dequeue members from the queue '
-#                 'to offer help / support / private discussion '
-#                 'in an orderly fashion.')
+#    about_text = ('A Python Discord template-bot, '
+#                 'demonstrating how to write a bot.')
 #
 #    embed = discord.Embed(colour = discord.Colour.blue())
 #    embed.set_author(name='Help')
 #    embed.add_field(name='About', value=about_text, inline=False)
 #                          
-#    embed.add_field(name='`!qu [msg]` | `!needhelp [msg]`',
-#                    value=('Queues you up for help with an optional message. '
-#                           'Quote messages with space, e.g. *!qu "what ever"*.'),
-#                    inline=False)
-#
-#    embed.add_field(name='`!ql` | `!nvm`',
-#                    value='Leave the help queue',
-#                    inline=False)
-#
-#    embed.add_field(name='`!qs` | `!show`',
-#                    value='Show the queue',
-#                    inline=False)
-#
-#    embed.add_field(name='`!qn`|`!next` (admin)',
-#                    value='Help the next in line',
-#                    inline=False)
-#
-#    embed.add_field(name='`!qe` (admin)',
-#                    value='Empty the queue for this server/guild',
+#    embed.add_field(name='`!hello` | `!yo`',
+#                    value=('hello world test command.',
 #                    inline=False)
 #
 #    await ctx.send(embed=embed)
