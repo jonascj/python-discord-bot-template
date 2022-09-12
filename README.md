@@ -119,7 +119,7 @@ the *Select a server* dropdown menu will be empty.
 ## Start the bot
 Finally start the Python bot:
 ```
-python help_queue_bot.py
+python bot.py
 ```
 
 You should now see your bot join your server.  
