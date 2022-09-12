@@ -97,10 +97,9 @@ Obtain an OAuth2 URL used to invite your bot to a server / guild.
 Follow the steps as indicated in the screenshot below: 
 ![Screenshot of obtaining oauth2 url](docs/discord-bot-oauth-link.png)
 
-In step 3 you need to select the following permissions: 
+In step 4 you need to select the following permissions: 
 * `Send Messages`
-* `Move Members` (optional, needed automatically move
-members to the same voice channel as the dequeuing admin)
+* `Read Messages/View Channels`
 
 ## Invite your bot to your server/guild
 1. Visit the copied OAuth2 URL (`https://discordapp.com/api/oauth2/auth...`)
