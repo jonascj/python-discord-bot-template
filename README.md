@@ -66,11 +66,28 @@ and follow the steps as indicated in the screenshot below:
 ![Screenshot of adding a bot to a Discord app](docs/discord-add-bot.png)
 
 ## Bot token
-Copy the bot token and add it to your `.env` file:
+Obtain your bots security token and place it in your local `.env` file:
 ```
 DISCORD_TOKEN=<your-token-here>
 ```
-![Screenshot of obtaining bot token](docs/discord-bot-token.png)
+1. Reset your bot's token to obtain a new one. 
+   The original one created (upon bot creation) is not visible to me (bug in discord.com user interface?).
+   ![Screenshot of resetting bot token](docs/discord-bot-reset-token.png)
+
+2. Copy the token displayed (either manually or using the [Copy] button). 
+   ![Screenshot of copying bot token](docs/discord-bot-copy-token.png)
+
+If you misplace your token you can not view it again, 
+you will have to create a new again.
+
+If you create a new token again (by pressing [Reset Token]) 
+your bot will not be able to run (join servers/guilds) before
+you update your `.env` file with the new token.
+
+**Important!** Keep this token secret.
+Anyone who knows the token can impersonate your bot/application
+with the consequences falling back on your account
+(since Discord will think it is you, with _your_ token).
 
 ## OAuth2 URL
 Obtain an OAuth2 URL used to invite your bot to a server / guild.
