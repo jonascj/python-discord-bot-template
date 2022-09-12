@@ -90,6 +90,12 @@ If you create a new token again (by pressing [Reset Token])
 your bot will not be able to run (join servers/guilds) before
 you update your `.env` file with the new token.
 
+## Priveleged Intents
+For the bot to be able to read messages
+(and hence respond to commands typed in messages)
+you need to enable the `MESSAGE CONTENT INTENT`:
+![Screenshot of enabling MESSAGE CONTENT INTENT](docs/discord-bot-intents.png)
+
 
 ## OAuth2 URL
 Obtain an OAuth2 URL used to invite your bot to a server / guild.
